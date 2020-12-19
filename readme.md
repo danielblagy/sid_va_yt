@@ -1,7 +1,9 @@
 # Sid, a virtual assistant in python
 ## Tutorial
 [Part 1: Speech recognition & speech synthesis](https://youtu.be/aVAmvwHa66k)
-** Part 2 available soon **
+[Part 2: Virtual Assistant Functionality](https://youtu.be/N_kRaa5QMig)
 ## Run
-cd to the root project directory
-run py src/main.py
+```
+cd [root_project_directory]
+py src/main.py
+```
