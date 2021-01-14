@@ -13,6 +13,8 @@ scripts = {}
 responses = {}
 active = True
 
+speech = 0
+
 
 def audio_to_text(recognizer, mic):
 	if not isinstance(recognizer, sr.Recognizer):
@@ -37,10 +39,6 @@ def audio_to_text(recognizer, mic):
 	return result
 
 def speak(text):
-	speech = pyttsx3.init()
-	voices = speech.getProperty('voices')
-	speech.setProperty("voice", voices[2].id)
-	speech.setProperty('rate', 125)
 	speech.say(text)
 	speech.runAndWait()
 
@@ -154,6 +152,13 @@ def main():
 
 	r = sr.Recognizer()
 	mic = sr.Microphone(device_index = 1) # if no device_index supplied, then default mic (i'm not using the default one atm)
+	
+	# initialize pyttsx instance
+	global speech
+	speech = pyttsx3.init()
+	voices = speech.getProperty('voices')
+	speech.setProperty("voice", voices[2].id)
+	speech.setProperty('rate', 125)
 	
 	while True:
 		result = audio_to_text(r, mic)
