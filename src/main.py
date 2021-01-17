@@ -2,7 +2,7 @@ import speech_recognition as sr
 import pyttsx3
 import get_resources
 from datetime import datetime
-import os
+from subprocess import Popen, CREATE_NEW_CONSOLE
 import webbrowser
 import random
 import sys
@@ -56,7 +56,7 @@ def execute_start_command(words):
 	for script_name in scripts.keys():
 		if script_name in words:
 			for script_command in scripts[script_name]:
-				os.system(script_command)
+				Popen(script_command, stdin=None, stdout=None, stderr=None, shell=True, creationflags=CREATE_NEW_CONSOLE)
 			break
 
 def execute_search_command(words):
