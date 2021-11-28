@@ -7,4 +7,4 @@ $ py src/sid.py
 ```
 
 ## The Tutorial on Youtube
-[![IMAGE ALT TEXT](https://img.youtube.com/vi/gbW-RPY_siI/0.jpg)](https://youtu.be/gbW-RPY_siI "Virtual Voice Assistant in Python (Tutorial)")
+[![Youtube Video Thumbnail](https://img.youtube.com/vi/gbW-RPY_siI/0.jpg)](https://youtu.be/gbW-RPY_siI "Virtual Voice Assistant in Python (Tutorial)")
