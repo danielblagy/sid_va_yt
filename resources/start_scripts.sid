@@ -1,4 +1,4 @@
-browser : D:\Opera\launcher.exe
-workspace one : D:\"Microsoft VS Code"\Code.exe,start D:\work\projects
+browser : D:\GoogleChromePortable\GoogleChromePortable.exe
+workspace one : code d:/work/projects/acorn-store
 terminal : start powershell
 Spotify : C:\Users\blagi\AppData\Roaming\Spotify\Spotify.exe
